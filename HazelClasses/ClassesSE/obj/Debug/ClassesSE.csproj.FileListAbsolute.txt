@@ -1,0 +1,2 @@
+c:\users\hazel\documents\visual studio 2012\Projects\ClassesSE\ClassesSE\bin\Debug\ClassesSE.exe.config
+C:\Users\Hazel\Documents\Visual Studio 2012\Projects\HazelClasses\ClassesSE\bin\Debug\ClassesSE.exe.config

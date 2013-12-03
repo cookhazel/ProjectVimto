@@ -1,0 +1,34 @@
+D:\Documents\Uni\Software Engineering\my work\doctorsSurgery\doctorsSurgery\bin\Debug\doctorsSurgery.exe.config
+D:\Documents\Uni\Software Engineering\my work\doctorsSurgery\doctorsSurgery\obj\Debug\doctorsSurgery.csprojResolveAssemblyReference.cache
+D:\Documents\Uni\Software Engineering\my work\doctorsSurgery\doctorsSurgery\obj\Debug\doctorsSurgery.Properties.Resources.resources
+D:\Documents\Uni\Software Engineering\my work\doctorsSurgery\doctorsSurgery\obj\Debug\doctorsSurgery.csproj.GenerateResource.Cache
+D:\Documents\Uni\Software Engineering\my work\doctorsSurgery\doctorsSurgery\obj\Debug\doctorsSurgery.MainUI.resources
+D:\Documents\Uni\Software Engineering\my work\doctorsSurgery\doctorsSurgery\bin\Debug\doctorsSurgery.exe
+D:\Documents\Uni\Software Engineering\my work\doctorsSurgery\doctorsSurgery\bin\Debug\doctorsSurgery.pdb
+D:\Documents\Uni\Software Engineering\my work\doctorsSurgery\doctorsSurgery\obj\Debug\doctorsSurgery.exe
+D:\Documents\Uni\Software Engineering\my work\doctorsSurgery\doctorsSurgery\obj\Debug\doctorsSurgery.pdb
+D:\Documents\Uni\Year 2\Software Engineering\my work\doctorsSurgery\doctorsSurgery\bin\Debug\doctorsSurgery.exe.config
+D:\Documents\Uni\Year 2\Software Engineering\my work\doctorsSurgery\doctorsSurgery\obj\Debug\doctorsSurgery.exe
+D:\Documents\Uni\Year 2\Software Engineering\my work\doctorsSurgery\doctorsSurgery\obj\Debug\doctorsSurgery.csprojResolveAssemblyReference.cache
+D:\Documents\Uni\Year 2\Software Engineering\my work\doctorsSurgery\doctorsSurgery\obj\Debug\doctorsSurgery.MainUI.resources
+D:\Documents\Uni\Year 2\Software Engineering\my work\doctorsSurgery\doctorsSurgery\obj\Debug\doctorsSurgery.Properties.Resources.resources
+D:\Documents\Uni\Year 2\Software Engineering\my work\doctorsSurgery\doctorsSurgery\obj\Debug\doctorsSurgery.csproj.GenerateResource.Cache
+D:\Documents\Uni\Year 2\Software Engineering\my work\doctorsSurgery\doctorsSurgery\bin\Debug\Database1.mdf
+D:\Documents\Uni\Year 2\Software Engineering\my work\doctorsSurgery\doctorsSurgery\bin\Debug\Database1_log.ldf
+D:\Documents\Uni\Year 2\Software Engineering\my work\doctorsSurgery\doctorsSurgery\bin\Debug\doctorsSurgery.exe
+D:\Documents\Uni\Year 2\Software Engineering\my work\doctorsSurgery\doctorsSurgery\bin\Debug\doctorsSurgery.pdb
+D:\Documents\Uni\Year 2\Software Engineering\my work\doctorsSurgery\doctorsSurgery\obj\Debug\doctorsSurgery.pdb
+D:\Documents\Uni\Year 2\Software Engineering\my work\doctorsSurgery\doctorsSurgery\obj\Debug\doctorsSurgery.Home.resources
+D:\Documents\Uni\Year 2\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\bin\Debug\doctorsSurgery.exe.config
+D:\Documents\Uni\Year 2\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\obj\Debug\doctorsSurgery.exe
+D:\Documents\Uni\Year 2\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\obj\Debug\doctorsSurgery.pdb
+D:\Documents\Uni\Year 2\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\bin\Debug\Database1.mdf
+D:\Documents\Uni\Year 2\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\bin\Debug\Database1_log.ldf
+D:\Documents\Uni\Year 2\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\bin\Debug\doctorsSurgery.exe
+D:\Documents\Uni\Year 2\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\bin\Debug\doctorsSurgery.pdb
+D:\Documents\Uni\Year 2\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\obj\Debug\doctorsSurgery.csprojResolveAssemblyReference.cache
+D:\Documents\Uni\Year 2\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\obj\Debug\doctorsSurgery.Medication.resources
+D:\Documents\Uni\Year 2\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\obj\Debug\doctorsSurgery.Home.resources
+D:\Documents\Uni\Year 2\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\obj\Debug\doctorsSurgery.MainUI.resources
+D:\Documents\Uni\Year 2\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\obj\Debug\doctorsSurgery.Properties.Resources.resources
+D:\Documents\Uni\Year 2\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\obj\Debug\doctorsSurgery.csproj.GenerateResource.Cache

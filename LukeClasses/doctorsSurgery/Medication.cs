@@ -21,5 +21,42 @@ namespace doctorsSurgery
         {
 
         }
+
+        private void isExtendibleTextBox_TextChanged(object sender, EventArgs e)
+        {
+            //run isExtendable
+            //if isExtendable returns true
+            //set testbox.text=extendable
+            //set textbox.colour = green
+            //dateTimePicker.visible == true
+            //else
+            //set textbox.text = not extendable
+            //set textbox.colour = red
+            
+        }
+
+        private void MedicationList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void isExtendable()
+        {
+            //dataset 
+            //MedicationList.SelectedIndex
+            //get isestendible bool
+            //return bool
+        }
+
+        private void dateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+            //dataset
+            //get max extend
+            //set dateTimePicker
+            //dateTimePicker.MinDate = DateTime.Today + (Convert.ToDateTime("01/00/0000"));
+            //dateTimePicker.MaxDate = max extend from dataset
+            //if dateTimePicer selected
+            //    set submit button.Enabled
+        }
     }
 }

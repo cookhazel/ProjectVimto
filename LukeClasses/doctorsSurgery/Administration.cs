@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
+using System.Configuration;
 
 namespace doctorsSurgery
 {
@@ -13,9 +15,17 @@ namespace doctorsSurgery
     {
         public void databaseFill()
         {
+            maxPatientInt();
+            
             string waveData;
+            int ID;
             List<string> title = new List<string>();
             List<string> firstName = new List<string>();
+            List<string> lastName = new List<string>();
+            List<string> postCode = new List<string>();
+            List<string> town = new List<string>();
+            List<string> county = new List<string>();
+            List<DateTime> DOB = new List<DateTime>();
 
             string fileLocation = "D:/Documents/Uni/Year 2/Software Engineering/my work/Database Data.csv";  
             StreamReader waveFile = new StreamReader(fileLocation);
@@ -24,6 +34,10 @@ namespace doctorsSurgery
             while (waveFile.EndOfStream == false)//loops until it reaches the last entry of the csv file   
             {     
                 waveData = waveFile.ReadLine();     
+                
+               
+                //ID.Add(
+
                 
                 title.Add(Convert.ToString(waveData.Split(',')[0]));//splits the rows and takes the first column   
                 foreach (var T in title)   
@@ -35,20 +49,52 @@ namespace doctorsSurgery
                 foreach (var F in firstName)         
                 {
                     databaseUpdate(F.ToString(), "First Name");
-                }              
-            }   
+                }   
+           
+            }
+            MessageBox.Show("Database Successfully Updates");
             waveFile.Close();//allows the streamReader to read another file      
         }
         static void databaseUpdate(string value, string column)
         {
-            string connectionString = "D:/Documents/Uni/Year 2/Software Engineering/my work/doctorsSurgery/doctorsSurgery/Database1.mdf";
-            SqlConnection connection = new SqlConnection(connectionString);
+            SqlConnection connection = new SqlConnection(doctorsSurgery.Properties.Settings.Default.Database1ConnectionString);
             SqlCommand cmd = new SqlCommand();
+            connection.Open();
+            cmd.Connection = connection;
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "UPDATE INTO Data (" + column + ") VALUES (@" + value + ")";
-            cmd.Parameters.AddWithValue("@"+column, value);
+            cmd.Parameters.AddWithValue("@" + column, value);
             cmd.ExecuteNonQuery();
         }
+        private int maxPatientInt()
+        {
+            
+            SqlParameter maxID = new SqlParameter();
+            SqlConnection connection = new SqlConnection(doctorsSurgery.Properties.Settings.Default.Database1ConnectionString);
+            SqlCommand cmd = new SqlCommand();
+            
+            cmd.Connection = connection;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT(ID) FROM dbo.Patient_DB";
+            
+            maxID.Direction = ParameterDirection.Output;
+            cmd.Parameters.Add(maxID);
+            connection.Open();
+            cmd.ExecuteNonQuery();
+            connection.Close();
+            
+            
+
+
+                MessageBox.Show(maxID.ToString());
+            
+            return Convert.ToInt32(maxID);
+
+            
+            
+        }
     }
+
+              
 
 }

@@ -54,14 +54,25 @@
             this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabPage1.SuspendLayout();
+            this.tabs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.dateTimePicker1);
             this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Size = new System.Drawing.Size(703, 369);
+            this.tabPage1.Controls.SetChildIndex(this.dataGridView1, 0);
+            this.tabPage1.Controls.SetChildIndex(this.dateTimePicker1, 0);
+            this.tabPage1.Controls.SetChildIndex(this.button1, 0);
+            // 
+            // tabs
+            // 
+            this.tabs.Size = new System.Drawing.Size(711, 395);
             // 
             // dateTimePicker1
             // 
@@ -254,15 +265,26 @@
             this.Column24.Name = "Column24";
             this.Column24.ReadOnly = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(461, 62);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(724, 391);
+            this.ClientSize = new System.Drawing.Size(711, 391);
             this.Name = "Home";
             this.Text = "home";
             this.Load += new System.EventHandler(this.Home_Load);
             this.tabPage1.ResumeLayout(false);
+            this.tabs.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -296,5 +318,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column23;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column24;
+        private System.Windows.Forms.Button button1;
     }
 }

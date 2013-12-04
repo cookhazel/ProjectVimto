@@ -52,6 +52,12 @@ namespace doctorsSurgery
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Administration update = new Administration();
+            update.databaseFill();
+        }
+
 
     }
 }                   

@@ -19,8 +19,12 @@ namespace doctorsSurgery
             tabs.Selecting += new TabControlCancelEventHandler(tabs_Selecting);
         }
 
+        private void MainUI_Load(object sender, EventArgs e)
+        {
 
-        void tabs_Selecting(object sender, TabControlCancelEventArgs e)
+        }
+
+        public void tabs_Selecting(object sender, TabControlCancelEventArgs e)
         {
             TabPage current = (sender as TabControl).SelectedTab;
             userControl(tabs.SelectedTab); 
@@ -36,36 +40,10 @@ namespace doctorsSurgery
             
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void MainUI_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         public void userControl(TabPage tabpage_NO)
         {
             tabpage_NO.Controls.Add(panel1);
         }
-
-
-       
-
-
-        
 
         private void btBack_Click(object sender, EventArgs e)
         {
@@ -83,8 +61,6 @@ namespace doctorsSurgery
         {
             //databaseMethod(textBox1.Text, textbox2.Text ect ect);
         }
-
-
 
         //private void button1_Click(object sender, EventArgs e)
         //{

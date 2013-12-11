@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 
 
-namespace WindowsFormsApplication1
+namespace PatientForm
 {
     
     public partial class FormFindPatient : Form

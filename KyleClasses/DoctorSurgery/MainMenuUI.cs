@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication2
+namespace MainMenuUI
 {
     public partial class MainMenu : Form
     {
@@ -17,9 +17,11 @@ namespace WindowsFormsApplication2
             InitializeComponent();
         }
 
-        private void btnPatient_Click(object sender, EventArgs e)
+        public void btnPatient_Click(object sender, EventArgs e)
         {
             // Takes you to find patient form, which I'm in the process of doing
+            PatientForm.FormFindPatient.Show();
+
         }
 
         private void button4_Click(object sender, EventArgs e)

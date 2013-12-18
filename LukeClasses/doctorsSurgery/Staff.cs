@@ -45,6 +45,10 @@ namespace doctorsSurgery
         //methods
         public Int32 checkAvalibility()
         {
+            TimetableDataSetTableAdapters.TimeTableTableAdapter tableAdapter;
+            tableAdapter = new TimetableDataSetTableAdapters.TimeTableTableAdapter();
+            tableAdapter.GetData();
+
             //go to database to get avalible days
             //go to database to get avalible times
             //go to database to get on duty info

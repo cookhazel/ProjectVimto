@@ -1,13 +1,16 @@
 ﻿namespace doctorsSurgery {
     
     
-    public partial class DataSet1 {
+    public partial class PatientDataset {
+        partial class Patient_DBDataTable
+        {
+        }
     }
 }
 
-namespace doctorsSurgery.DataSet1TableAdapters {
+namespace doctorsSurgery.PatientDatasetTableAdapters {
     
     
-    public partial class PatientTableAdapter {
+    public partial class Patient_DBTableAdapter {
     }
 }

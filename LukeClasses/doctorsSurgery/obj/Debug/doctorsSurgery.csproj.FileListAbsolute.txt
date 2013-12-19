@@ -60,3 +60,16 @@ G:\GitHub.home\ProjectVimto\LukeClasses\doctorsSurgery\bin\Debug\doctorsSurgery.
 G:\GitHub.home\ProjectVimto\LukeClasses\doctorsSurgery\bin\Debug\doctorsSurgery.pdb
 G:\GitHub.home\ProjectVimto\LukeClasses\doctorsSurgery\obj\Debug\doctorsSurgery.PatientAdministration.resources
 D:\Documents\Uni\Year 2\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\obj\Debug\doctorsSurgery.PatientAdministration.resources
+C:\Users\Hazel\Documents\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\bin\Debug\doctorsSurgery.exe.config
+C:\Users\Hazel\Documents\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\obj\Debug\doctorsSurgery.exe
+C:\Users\Hazel\Documents\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\obj\Debug\doctorsSurgery.pdb
+C:\Users\Hazel\Documents\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\obj\Debug\doctorsSurgery.csprojResolveAssemblyReference.cache
+C:\Users\Hazel\Documents\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\bin\Debug\Database1.mdf
+C:\Users\Hazel\Documents\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\bin\Debug\Database1_log.ldf
+C:\Users\Hazel\Documents\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\bin\Debug\doctorsSurgery.exe
+C:\Users\Hazel\Documents\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\bin\Debug\doctorsSurgery.pdb
+C:\Users\Hazel\Documents\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\obj\Debug\doctorsSurgery.PatientAdministration.resources
+C:\Users\Hazel\Documents\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\obj\Debug\doctorsSurgery.Home.resources
+C:\Users\Hazel\Documents\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\obj\Debug\doctorsSurgery.MainUI.resources
+C:\Users\Hazel\Documents\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\obj\Debug\doctorsSurgery.Properties.Resources.resources
+C:\Users\Hazel\Documents\GitHub\ProjectVimto\LukeClasses\doctorsSurgery\obj\Debug\doctorsSurgery.csproj.GenerateResource.Cache

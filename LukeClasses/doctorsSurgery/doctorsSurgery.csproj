@@ -63,12 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Administration.cs" />
-    <Compile Include="Medication.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Medication.Designer.cs">
-      <DependentUpon>Medication.cs</DependentUpon>
-    </Compile>
     <Compile Include="MedicationDataset.cs">
       <DependentUpon>MedicationDataset.xsd</DependentUpon>
       <SubType>Component</SubType>
@@ -113,9 +107,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TimetableDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Medication.resx">
-      <DependentUpon>Medication.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PatientAdministration.resx">
       <DependentUpon>PatientAdministration.cs</DependentUpon>
     </EmbeddedResource>

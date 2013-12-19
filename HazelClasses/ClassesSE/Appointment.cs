@@ -20,6 +20,19 @@ namespace ClassesSE
             _appointmentDate = appointmentDate;
         }
 
+        //properties
+        public Staff StaffProperty
+        {
+            get { return _staff; }
+            set { _staff = value; }
+        }
+
+        public Patient PatientProperty
+        {
+            get { return _patient; }
+            set { _patient = value; }
+        }
+
         public void StoreAppointment()
         {
 

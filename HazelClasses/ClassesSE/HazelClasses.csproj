@@ -62,7 +62,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Appointment.cs" />
+    <Compile Include="AppointmentUnused.cs" />
     <Compile Include="AppointmentUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +84,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>hazelDatabaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="HazelDataClasses.cs">
+      <DependentUpon>HazelDataClasses.dbml</DependentUpon>
+    </Compile>
     <Compile Include="HazelDataClasses.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -98,7 +101,6 @@
     <Compile Include="Patient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Staff.cs" />
     <EmbeddedResource Include="AppointmentUI.resx">
       <DependentUpon>AppointmentUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,11 +173,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="hazelDatabase.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="hazelDatabase_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>hazelDatabase.mdf</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>

@@ -17,6 +17,8 @@ namespace ClassesSE
         {
             InitializeComponent();
             usernameTextBox.Focus();
+            //replace with CenterToParent when LoginPage is instantiated from a main form
+            this.CenterToScreen();
         }
 
         private void loginPage_Load(object sender, EventArgs e)
@@ -29,44 +31,44 @@ namespace ClassesSE
             try
             {
                 string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["hazelDatabaseConnectionString"].ConnectionString;
-                DataContext dbContext = new DataContext(connectionString);
-                    
-                Table<login> loginRecords = dbContext.GetTable<login>();
-
-                var query =
-                    from record in loginRecords
-                    where (record.Username == usernameTextBox.Text) && (record.Password == passwordTextBox.Text)
-                    select record;
-
-                //IQueryable<login> sameQuery = loginRecords.Where(l => l.Username == "Reception").Single<login>();
-
-                //Calling ToList will return DB results. This is "Deferred Execution"
-                //List<login> list = query.ToList<login>();
-
-                if (query.Count<login>() == 1)
+                using (DataContext dbContext = new DataContext(connectionString))
                 {
-                    //var passwordQuery =
-                    //    from record in loginRecords
-                    //    where record.Password == passwordTextBox.Text
-                    //    select record;
-                    //need to check that the password is not only exists in the db, but is the one that matches the password 
-                    //check the password
-                    //Application.Run(new AppointmentUI());
-                    new AppointmentUI().Show();
-                    this.Hide();
-                    
-                }
-                else
-                {
-                    //there was either 0 or more than 1 found
-                    MessageBox.Show("Incorrect, please enter a valid username/password");
-                }
+                    Table<login> loginRecords = dbContext.GetTable<login>();
 
-                MessageBox.Show(query.ToString());
+                    var query =
+                        from record in loginRecords
+                        where (record.Username == usernameTextBox.Text) && (record.Password == passwordTextBox.Text)
+                        select record;
+
+                    //IQueryable<login> sameQuery = loginRecords.Where(l => l.Username == "Reception").Single<login>();
+
+                    //Calling ToList will return DB results. This is "Deferred Execution"
+                    //List<login> list = query.ToList<login>();
+
+                    if (query.Count<login>() == 1)
+                    {
+                        //var passwordQuery =
+                        //    from record in loginRecords
+                        //    where record.Password == passwordTextBox.Text
+                        //    select record;
+                        //need to check that the password is not only exists in the db, but is the one that matches the password 
+                        //check the password
+                        //Application.Run(new AppointmentUI());
+                        new AppointmentUI().Show();
+                        this.Hide();
+
+                    }
+                    else
+                    {
+                        //there was either 0 or more than 1 found
+                        MessageBox.Show("Incorrect, please enter a valid username/password");
+                    }
+                }
+                //MessageBox.Show(query.ToString());
               
                 //check against database
             }
-            catch
+            catch(Exception ex)
             {
                 MessageBox.Show("Error while logging in, please try again");
             }

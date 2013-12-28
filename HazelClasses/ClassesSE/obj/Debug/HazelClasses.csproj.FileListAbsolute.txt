@@ -1,19 +1,6 @@
 C:\Users\Hazel\Documents\Visual Studio 2012\Projects\HazelClasses\ClassesSE\bin\Debug\ClassesSE.exe.config
 C:\Users\Hazel\Documents\UniWork\Software Engineering\Code\HazelClasses\ClassesSE\bin\Debug\ClassesSE.exe.config
 E:\Uni 2013-14\HazelClasses\ClassesSE\bin\Debug\ClassesSE.exe.config
-C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\bin\Debug\ClassesSE.exe.config
-C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\obj\Debug\HazelClasses.csprojResolveAssemblyReference.cache
-C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\obj\Debug\ClassesSE.LoginPage.resources
-C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\obj\Debug\ClassesSE.Properties.Resources.resources
-C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\obj\Debug\HazelClasses.csproj.GenerateResource.Cache
-C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\obj\Debug\ClassesSE.DataViewTestForm.resources
-C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\bin\Debug\hazelDatabase.mdf
-C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\bin\Debug\hazelDatabase_log.ldf
-C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\bin\Debug\ClassesSE.exe
-C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\bin\Debug\ClassesSE.pdb
-C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\obj\Debug\ClassesSE.exe
-C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\obj\Debug\ClassesSE.pdb
-C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\obj\Debug\ClassesSE.AppointmentUI.resources
 E:\HazelClasses\ClassesSE\bin\Debug\ClassesSE.exe.config
 E:\HazelClasses\ClassesSE\obj\Debug\ClassesSE.exe
 E:\HazelClasses\ClassesSE\obj\Debug\ClassesSE.pdb
@@ -40,3 +27,16 @@ C:\Users\Hazel\Desktop\HazelClasses\ClassesSE\obj\Debug\ClassesSE.DataViewTestFo
 C:\Users\Hazel\Desktop\HazelClasses\ClassesSE\obj\Debug\ClassesSE.LoginPage.resources
 C:\Users\Hazel\Desktop\HazelClasses\ClassesSE\obj\Debug\ClassesSE.Properties.Resources.resources
 C:\Users\Hazel\Desktop\HazelClasses\ClassesSE\obj\Debug\HazelClasses.csproj.GenerateResource.Cache
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\bin\Debug\hazelDatabase.mdf
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\bin\Debug\hazelDatabase_log.ldf
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\bin\Debug\ClassesSE.exe.config
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\bin\Debug\ClassesSE.exe
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\bin\Debug\ClassesSE.pdb
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\obj\Debug\ClassesSE.AppointmentUI.resources
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\obj\Debug\ClassesSE.DataViewTestForm.resources
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\obj\Debug\ClassesSE.LoginPage.resources
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\obj\Debug\ClassesSE.Properties.Resources.resources
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\obj\Debug\HazelClasses.csproj.GenerateResource.Cache
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\obj\Debug\ClassesSE.exe
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\obj\Debug\ClassesSE.pdb
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\ClassesSE\obj\Debug\HazelClasses.csprojResolveAssemblyReference.cache

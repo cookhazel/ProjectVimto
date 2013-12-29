@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="PatientDataset" targetNamespace="http://tempuri.org/PatientDataset.xsd" xmlns:mstns="http://tempuri.org/PatientDataset.xsd" xmlns="http://tempuri.org/PatientDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -7,12 +7,12 @@
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Database1ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Database1ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.doctorsSurgery.Properties.Settings.GlobalReference.Default.Database1ConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Patient1TableAdapter" GeneratorDataComponentClassName="Patient1TableAdapter" Name="Patient1" UserDataComponentName="Patient1TableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Patient_DBTableAdapter" GeneratorDataComponentClassName="Patient_DBTableAdapter" Name="Patient_DB" UserDataComponentName="Patient_DBTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="Database1ConnectionString (Settings)" DbObjectName="dbo.Patient" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="Database1ConnectionString (Settings)" DbObjectName="dbo.Patient_DB" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>DELETE FROM [dbo].[Patient] WHERE (([Id] = @Original_Id) AND ((@IsNull_Title = 1 AND [Title] IS NULL) OR ([Title] = @Original_Title)) AND ((@IsNull_First_Name = 1 AND [First Name] IS NULL) OR ([First Name] = @Original_First_Name)) AND ((@IsNull_Last_NAme = 1 AND [Last NAme] IS NULL) OR ([Last NAme] = @Original_Last_NAme)) AND ((@IsNull_Post_Code = 1 AND [Post Code] IS NULL) OR ([Post Code] = @Original_Post_Code)) AND ((@IsNull_Address = 1 AND [Address] IS NULL) OR ([Address] = @Original_Address)) AND ((@IsNull_Town = 1 AND [Town] IS NULL) OR ([Town] = @Original_Town)) AND ((@IsNull_County = 1 AND [County] IS NULL) OR ([County] = @Original_County)) AND ((@IsNull_DOB = 1 AND [DOB] IS NULL) OR ([DOB] = @Original_DOB)))</CommandText>
+                    <CommandText>DELETE FROM [dbo].[Patient_DB] WHERE (([Id] = @Original_Id) AND ((@IsNull_Title = 1 AND [Title] IS NULL) OR ([Title] = @Original_Title)) AND ((@IsNull_First_Name = 1 AND [First Name] IS NULL) OR ([First Name] = @Original_First_Name)) AND ((@IsNull_Last_NAme = 1 AND [Last NAme] IS NULL) OR ([Last NAme] = @Original_Last_NAme)) AND ((@IsNull_Post_Code = 1 AND [Post Code] IS NULL) OR ([Post Code] = @Original_Post_Code)) AND ((@IsNull_Address = 1 AND [Address] IS NULL) OR ([Address] = @Original_Address)) AND ((@IsNull_Town = 1 AND [Town] IS NULL) OR ([Town] = @Original_Town)) AND ((@IsNull_County = 1 AND [County] IS NULL) OR ([County] = @Original_County)) AND ((@IsNull_DOB = 1 AND [DOB] IS NULL) OR ([DOB] = @Original_DOB)))</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Title" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Title" SourceColumnNullMapping="true" SourceVersion="Original" />
@@ -36,10 +36,9 @@
                 </DeleteCommand>
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>INSERT INTO [dbo].[Patient] ([Id], [Title], [First Name], [Last NAme], [Post Code], [Address], [Town], [County], [DOB]) VALUES (@Id, @Title, @First_Name, @Last_NAme, @Post_Code, @Address, @Town, @County, @DOB);
-SELECT Id, Title, [First Name], [Last NAme], [Post Code], Address, Town, County, DOB FROM Patient WHERE (Id = @Id)</CommandText>
+                    <CommandText>INSERT INTO [dbo].[Patient_DB] ([Title], [First Name], [Last NAme], [Post Code], [Address], [Town], [County], [DOB]) VALUES (@Title, @First_Name, @Last_NAme, @Post_Code, @Address, @Town, @County, @DOB);
+SELECT Id, Title, [First Name], [Last NAme], [Post Code], Address, Town, County, DOB FROM Patient_DB WHERE (Id = SCOPE_IDENTITY())</CommandText>
                     <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Title" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Title" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@First_Name" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="First Name" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Last_NAme" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Last NAme" SourceColumnNullMapping="false" SourceVersion="Current" />
@@ -53,16 +52,15 @@ SELECT Id, Title, [First Name], [Last NAme], [Post Code], Address, Town, County,
                 </InsertCommand>
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT Id, Title, [First Name], [Last NAme], [Post Code], Address, Town, County, DOB FROM dbo.Patient</CommandText>
+                    <CommandText>SELECT Id, Title, [First Name], [Last NAme], [Post Code], Address, Town, County, DOB FROM dbo.Patient_DB</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>UPDATE [dbo].[Patient] SET [Id] = @Id, [Title] = @Title, [First Name] = @First_Name, [Last NAme] = @Last_NAme, [Post Code] = @Post_Code, [Address] = @Address, [Town] = @Town, [County] = @County, [DOB] = @DOB WHERE (([Id] = @Original_Id) AND ((@IsNull_Title = 1 AND [Title] IS NULL) OR ([Title] = @Original_Title)) AND ((@IsNull_First_Name = 1 AND [First Name] IS NULL) OR ([First Name] = @Original_First_Name)) AND ((@IsNull_Last_NAme = 1 AND [Last NAme] IS NULL) OR ([Last NAme] = @Original_Last_NAme)) AND ((@IsNull_Post_Code = 1 AND [Post Code] IS NULL) OR ([Post Code] = @Original_Post_Code)) AND ((@IsNull_Address = 1 AND [Address] IS NULL) OR ([Address] = @Original_Address)) AND ((@IsNull_Town = 1 AND [Town] IS NULL) OR ([Town] = @Original_Town)) AND ((@IsNull_County = 1 AND [County] IS NULL) OR ([County] = @Original_County)) AND ((@IsNull_DOB = 1 AND [DOB] IS NULL) OR ([DOB] = @Original_DOB)));
-SELECT Id, Title, [First Name], [Last NAme], [Post Code], Address, Town, County, DOB FROM Patient WHERE (Id = @Id)</CommandText>
+                    <CommandText>UPDATE [dbo].[Patient_DB] SET [Title] = @Title, [First Name] = @First_Name, [Last NAme] = @Last_NAme, [Post Code] = @Post_Code, [Address] = @Address, [Town] = @Town, [County] = @County, [DOB] = @DOB WHERE (([Id] = @Original_Id) AND ((@IsNull_Title = 1 AND [Title] IS NULL) OR ([Title] = @Original_Title)) AND ((@IsNull_First_Name = 1 AND [First Name] IS NULL) OR ([First Name] = @Original_First_Name)) AND ((@IsNull_Last_NAme = 1 AND [Last NAme] IS NULL) OR ([Last NAme] = @Original_Last_NAme)) AND ((@IsNull_Post_Code = 1 AND [Post Code] IS NULL) OR ([Post Code] = @Original_Post_Code)) AND ((@IsNull_Address = 1 AND [Address] IS NULL) OR ([Address] = @Original_Address)) AND ((@IsNull_Town = 1 AND [Town] IS NULL) OR ([Town] = @Original_Town)) AND ((@IsNull_County = 1 AND [County] IS NULL) OR ([County] = @Original_County)) AND ((@IsNull_DOB = 1 AND [DOB] IS NULL) OR ([DOB] = @Original_DOB)));
+SELECT Id, Title, [First Name], [Last NAme], [Post Code], Address, Town, County, DOB FROM Patient_DB WHERE (Id = @Id)</CommandText>
                     <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Title" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Title" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@First_Name" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="First Name" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Last_NAme" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="Last NAme" SourceColumnNullMapping="false" SourceVersion="Current" />
@@ -88,6 +86,7 @@ SELECT Id, Title, [First Name], [Last NAme], [Post Code], Address, Town, County,
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_County" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="County" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DOB" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DOB" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DOB" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DOB" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id" ColumnName="Id" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
                   </DbCommand>
                 </UpdateCommand>
@@ -104,20 +103,39 @@ SELECT Id, Title, [First Name], [Last NAme], [Post Code], Address, Town, County,
               <Mapping SourceColumn="County" DataSetColumn="County" />
               <Mapping SourceColumn="DOB" DataSetColumn="DOB" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="Database1ConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="AdmiFill" Modifier="Public" Name="AdmiFill" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="AdmiFill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO [dbo].[Patient_DB] ([Title], [First Name], [Last NAme], [Post Code], [Address], [Town], [County], [DOB]) VALUES (@Title, @First_Name, @Last_NAme, @Post_Code, @Address, @Town, @County, @DOB);
+</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Title" ColumnName="Title" DataSourceName="[G:\GITHUB.HOME\PROJECTVIMTO\LUKECLASSES\DOCTORSSURGERY\DATABASE1.MDF].dbo.Patient_DB" DataTypeServer="nchar(4)" DbType="String" Direction="Input" ParameterName="@Title" Precision="0" ProviderType="NChar" Scale="0" Size="4" SourceColumn="Title" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="First_Name" ColumnName="First Name" DataSourceName="[G:\GITHUB.HOME\PROJECTVIMTO\LUKECLASSES\DOCTORSSURGERY\DATABASE1.MDF].dbo.Patient_DB" DataTypeServer="nchar(10)" DbType="String" Direction="Input" ParameterName="@First_Name" Precision="0" ProviderType="NChar" Scale="0" Size="10" SourceColumn="First Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Last_NAme" ColumnName="Last NAme" DataSourceName="[G:\GITHUB.HOME\PROJECTVIMTO\LUKECLASSES\DOCTORSSURGERY\DATABASE1.MDF].dbo.Patient_DB" DataTypeServer="nchar(10)" DbType="String" Direction="Input" ParameterName="@Last_NAme" Precision="0" ProviderType="NChar" Scale="0" Size="10" SourceColumn="Last NAme" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Post_Code" ColumnName="Post Code" DataSourceName="[G:\GITHUB.HOME\PROJECTVIMTO\LUKECLASSES\DOCTORSSURGERY\DATABASE1.MDF].dbo.Patient_DB" DataTypeServer="nchar(10)" DbType="String" Direction="Input" ParameterName="@Post_Code" Precision="0" ProviderType="NChar" Scale="0" Size="10" SourceColumn="Post Code" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Address" ColumnName="Address" DataSourceName="[G:\GITHUB.HOME\PROJECTVIMTO\LUKECLASSES\DOCTORSSURGERY\DATABASE1.MDF].dbo.Patient_DB" DataTypeServer="nchar(20)" DbType="String" Direction="Input" ParameterName="@Address" Precision="0" ProviderType="NChar" Scale="0" Size="20" SourceColumn="Address" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Town" ColumnName="Town" DataSourceName="[G:\GITHUB.HOME\PROJECTVIMTO\LUKECLASSES\DOCTORSSURGERY\DATABASE1.MDF].dbo.Patient_DB" DataTypeServer="nchar(13)" DbType="String" Direction="Input" ParameterName="@Town" Precision="0" ProviderType="NChar" Scale="0" Size="13" SourceColumn="Town" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="County" ColumnName="County" DataSourceName="[G:\GITHUB.HOME\PROJECTVIMTO\LUKECLASSES\DOCTORSSURGERY\DATABASE1.MDF].dbo.Patient_DB" DataTypeServer="nchar(13)" DbType="String" Direction="Input" ParameterName="@County" Precision="0" ProviderType="NChar" Scale="0" Size="13" SourceColumn="County" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="DOB" ColumnName="DOB" DataSourceName="[G:\GITHUB.HOME\PROJECTVIMTO\LUKECLASSES\DOCTORSSURGERY\DATABASE1.MDF].dbo.Patient_DB" DataTypeServer="nchar(10)" DbType="String" Direction="Input" ParameterName="@DOB" Precision="0" ProviderType="NChar" Scale="0" Size="10" SourceColumn="DOB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+  <xs:element name="PatientDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PatientDataset" msprop:Generator_UserDSName="PatientDataset">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Patient1" msprop:Generator_TableClassName="Patient1DataTable" msprop:Generator_TableVarName="tablePatient1" msprop:Generator_TablePropName="Patient1" msprop:Generator_RowDeletingName="Patient1RowDeleting" msprop:Generator_RowChangingName="Patient1RowChanging" msprop:Generator_RowEvHandlerName="Patient1RowChangeEventHandler" msprop:Generator_RowDeletedName="Patient1RowDeleted" msprop:Generator_UserTableName="Patient1" msprop:Generator_RowChangedName="Patient1RowChanged" msprop:Generator_RowEvArgName="Patient1RowChangeEvent" msprop:Generator_RowClassName="Patient1Row">
+        <xs:element name="Patient_DB" msprop:Generator_TableClassName="Patient_DBDataTable" msprop:Generator_TableVarName="tablePatient_DB" msprop:Generator_RowChangedName="Patient_DBRowChanged" msprop:Generator_TablePropName="Patient_DB" msprop:Generator_RowDeletingName="Patient_DBRowDeleting" msprop:Generator_RowChangingName="Patient_DBRowChanging" msprop:Generator_RowEvHandlerName="Patient_DBRowChangeEventHandler" msprop:Generator_RowDeletedName="Patient_DBRowDeleted" msprop:Generator_RowClassName="Patient_DBRow" msprop:Generator_UserTableName="Patient_DB" msprop:Generator_RowEvArgName="Patient_DBRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
               <xs:element name="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_UserColumnName="Title" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -174,7 +192,7 @@ SELECT Id, Title, [First Name], [Last NAme], [Post Code], Address, Town, County,
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:Patient1" />
+      <xs:selector xpath=".//mstns:Patient_DB" />
       <xs:field xpath="mstns:Id" />
     </xs:unique>
   </xs:element>

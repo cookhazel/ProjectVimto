@@ -63,8 +63,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Administration.cs" />
-    <Compile Include="MedicationDataset.cs">
-      <DependentUpon>MedicationDataset.xsd</DependentUpon>
+    <Compile Include="PatientAdministration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientAdministration.Designer.cs">
+      <DependentUpon>PatientAdministration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientDataset.cs">
+      <DependentUpon>PatientDataset.xsd</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="PatientDataset.Designer.cs">
@@ -72,16 +78,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PatientDataset.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Medication.cs">
+    <Compile Include="StaffAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Medication.Designer.cs">
-      <DependentUpon>Medication.cs</DependentUpon>
+    <Compile Include="StaffAdmin.Designer.cs">
+      <DependentUpon>StaffAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="MedicationDataset.Designer.cs">
+    <Compile Include="StaffDataset.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MedicationDataset.xsd</DependentUpon>
+      <DependentUpon>StaffDataset.xsd</DependentUpon>
     </Compile>
     <Compile Include="Timetable.cs">
       <SubType>Form</SubType>
@@ -98,8 +104,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Medication.resx">
-      <DependentUpon>Medication.cs</DependentUpon>
+    <Compile Include="TimeTableAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeTableAdmin.Designer.cs">
+      <DependentUpon>TimeTableAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimetableDataSet.cs">
+      <DependentUpon>TimetableDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TimetableDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimetableDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PatientAdministration.resx">
+      <DependentUpon>PatientAdministration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffAdmin.resx">
+      <DependentUpon>StaffAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Timetable.resx">
       <DependentUpon>Timetable.cs</DependentUpon>
@@ -116,6 +140,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TimeTableAdmin.resx">
+      <DependentUpon>TimeTableAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="PatientDataset.xsc">
       <DependentUpon>PatientDataset.xsd</DependentUpon>
     </None>
@@ -127,17 +154,6 @@
     <None Include="PatientDataset.xss">
       <DependentUpon>PatientDataset.xsd</DependentUpon>
     </None>
-    <None Include="MedicationDataset.xsc">
-      <DependentUpon>MedicationDataset.xsd</DependentUpon>
-    </None>
-    <None Include="MedicationDataset.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>MedicationDataset.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="MedicationDataset.xss">
-      <DependentUpon>MedicationDataset.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -147,6 +163,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="StaffDataset.xsc">
+      <DependentUpon>StaffDataset.xsd</DependentUpon>
+    </None>
+    <None Include="StaffDataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffDataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="StaffDataset.xss">
+      <DependentUpon>StaffDataset.xsd</DependentUpon>
+    </None>
+    <None Include="TimetableDataSet.xsc">
+      <DependentUpon>TimetableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TimetableDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimetableDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TimetableDataSet.xss">
+      <DependentUpon>TimetableDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -181,6 +219,9 @@
       <ProductName>SQL Server Compact 4.0 SP1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

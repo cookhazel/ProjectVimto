@@ -17,22 +17,22 @@ namespace doctorsSurgery
         //properties
         public string Name
         {
-            get{ return name; }
+            get { return name; }
             set { name = value; }
         }
 
         public string StaffID
         {
-            get{ return staffID; }
+            get { return staffID; }
             set { staffID = value; }
         }
 
         public DateTime Duty
         {
-            get{ return duty; }
+            get { return duty; }
             set { duty = value; }
         }
-        
+
         public string GP
         {
             get { return isGP.ToString(); }
@@ -45,11 +45,20 @@ namespace doctorsSurgery
         //methods
         public Int32 checkAvalibility()
         {
+            TimetableDataSetTableAdapters.TimeTableTableAdapter tableAdapter;
+            tableAdapter = new TimetableDataSetTableAdapters.TimeTableTableAdapter();
+            tableAdapter.GetData();
+
             //go to database to get avalible days
             //go to database to get avalible times
             //go to database to get on duty info
             MessageBox.Show("CheckAvalibility");
             return 0;
         }
+
+
+
+
+
     }
 }

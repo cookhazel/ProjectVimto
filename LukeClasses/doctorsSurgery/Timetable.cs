@@ -19,32 +19,16 @@ namespace doctorsSurgery
 
         private void Home_Load(object sender, EventArgs e)
         {
-            dataGridView1.BackgroundColor = Color.LightBlue;
-            
-            
+            TimetableDataSetTableAdapters.StaffTableAdapter times;
+            times = new TimetableDataSetTableAdapters.StaffTableAdapter();
+            TimetableDataSet.StaffDataTable t = new TimetableDataSet.StaffDataTable();
+            times.TimeTableFill(t);
+            dataGridView1.DataSource = t;           
         }
-
-        private void staffTimetable_Click(object sender, EventArgs e)
-        {
-
-        }
-
-       
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
             
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //dataGridView1.Rows[0].Cells[0].Style.BackColor = Color.Red;
-            //dataGridView1.Rows[0].Cells[0](object sender, EventArgs e)
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -52,12 +36,44 @@ namespace doctorsSurgery
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void tabPage1_Click_1(object sender, EventArgs e)
         {
-            Administration update = new Administration();
-            update.databaseFill();
+
         }
 
+        //using a dataset
+        //{
+            //TimetableDataSetTableAdapters.TimeTableTableAdapter times;
+            //times = new TimetableDataSetTableAdapters.TimeTableTableAdapter();
+            //TimetableDataSet.TimeTableDataTable t = new TimetableDataSet.TimeTableDataTable();
+            //times.FillTimeTable(t);
+            //dataGridView1.DataSource = t;     
+        //}
 
+        private void timeTableFillToolStripButton_Click(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+                
+           tabs.SelectedTab = tabs.TabPages["tabPage2"];
+           MessageBox.Show(tabs.ToString());
+            
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }                   

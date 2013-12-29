@@ -219,24 +219,9 @@ namespace ClassesSE
 		private string _firstName;
 		
 		private string _lastName;
-
-        #region non auto generated code
-
-        public override string ToString()
-        {
-            string title = "Nurse.";
-            if(this.IsGP.ToLower().StartsWith("yes"))
-                title = "Dr.";
-
-            return string.Format("{0} {1}", title, this.firstName);
-        }
-
-        #endregion
-
-
-
-        #region Extensibility Method Definitions
-        partial void OnLoaded();
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
     partial void OnIdChanging(int value);

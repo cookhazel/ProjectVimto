@@ -49,19 +49,21 @@
             // usernameTextBox
             // 
             this.usernameTextBox.Location = new System.Drawing.Point(107, 87);
-            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(132, 22);
             this.usernameTextBox.TabIndex = 1;
+            this.usernameTextBox.Text = "Reception";
             // 
             // passwordTextBox
             // 
             this.passwordTextBox.Location = new System.Drawing.Point(107, 139);
-            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(132, 22);
             this.passwordTextBox.TabIndex = 2;
+            this.passwordTextBox.Text = "Password";
             this.passwordTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.passwordTextBox_KeyPress);
             // 
             // label1

@@ -53,6 +53,7 @@
             this._doctorNurseDropDown.Name = "_doctorNurseDropDown";
             this._doctorNurseDropDown.Size = new System.Drawing.Size(135, 24);
             this._doctorNurseDropDown.TabIndex = 1;
+            this._doctorNurseDropDown.SelectedIndexChanged += new System.EventHandler(this._doctorNurseDropDown_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -82,7 +83,7 @@
             this.submitAppointment.TabIndex = 4;
             this.submitAppointment.Text = "Make Appointment";
             this.submitAppointment.UseVisualStyleBackColor = true;
-            this.submitAppointment.Click += new System.EventHandler(this.submitAppointment_Click);
+            this.submitAppointment.Click += new System.EventHandler(this.SubmitAppointment_Click);
             // 
             // AppointmentUI
             // 

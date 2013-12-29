@@ -17,22 +17,22 @@ namespace doctorsSurgery
         //properties
         public string Name
         {
-            get{ return name; }
+            get { return name; }
             set { name = value; }
         }
 
         public string StaffID
         {
-            get{ return staffID; }
+            get { return staffID; }
             set { staffID = value; }
         }
 
         public DateTime Duty
         {
-            get{ return duty; }
+            get { return duty; }
             set { duty = value; }
         }
-        
+
         public string GP
         {
             get { return isGP.ToString(); }
@@ -55,5 +55,10 @@ namespace doctorsSurgery
             MessageBox.Show("CheckAvalibility");
             return 0;
         }
+
+
+
+
+
     }
 }

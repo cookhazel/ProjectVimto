@@ -29,93 +29,122 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.medicationDataset = new doctorsSurgery.MedicationDataset();
-            this.medication_DBBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.medication_DBTableAdapter = new doctorsSurgery.MedicationDatasetTableAdapters.Medication_DBTableAdapter();
-            this.tableAdapterManager = new doctorsSurgery.MedicationDatasetTableAdapters.TableAdapterManager();
-            this.button1 = new System.Windows.Forms.Button();
-            this.timeTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.timeTableBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.staffBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.timetableDataSet = new doctorsSurgery.TimetableDataSet();
+            this.staffDataset = new doctorsSurgery.StaffDataset();
+            this.staffBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.staffTableAdapter1 = new doctorsSurgery.StaffDatasetTableAdapters.StaffTableAdapter();
+            this.tableAdapterManager2 = new doctorsSurgery.StaffDatasetTableAdapters.TableAdapterManager();
+            this.timeTableBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.timetableDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fKTimeTableID60A75C0FBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.staffBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.timeTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.timeTableTableAdapter = new doctorsSurgery.TimetableDataSetTableAdapters.TimeTableTableAdapter();
             this.tableAdapterManager1 = new doctorsSurgery.TimetableDataSetTableAdapters.TableAdapterManager();
-            this.staffBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.staffTableAdapter = new doctorsSurgery.TimetableDataSetTableAdapters.StaffTableAdapter();
-            this.timeTableDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeTableBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.tabs.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.medicationDataset)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medication_DBBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeTableBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timetableDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeTableBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeTableDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timetableDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.staffDataset)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeTableBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timetableDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKTimeTableID60A75C0FBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeTableBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Size = new System.Drawing.Size(766, 401);
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click_1);
             // 
             // tabs
             // 
-            this.tabs.Size = new System.Drawing.Size(774, 427);
+            this.tabs.Size = new System.Drawing.Size(1076, 427);
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.AutoScroll = true;
+            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Size = new System.Drawing.Size(1068, 401);
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click_1);
+            this.tabPage1.Controls.SetChildIndex(this.button1, 0);
+            this.tabPage1.Controls.SetChildIndex(this.button2, 0);
             // 
             // tabPage2
             // 
             this.tabPage2.AutoScroll = true;
-            this.tabPage2.Controls.Add(this.timeTableDataGridView);
-            this.tabPage2.Controls.Add(this.button1);
-            this.tabPage2.Size = new System.Drawing.Size(766, 401);
-            this.tabPage2.Controls.SetChildIndex(this.button1, 0);
-            this.tabPage2.Controls.SetChildIndex(this.timeTableDataGridView, 0);
+            this.tabPage2.Controls.Add(this.dataGridView1);
+            this.tabPage2.Size = new System.Drawing.Size(1068, 401);
+            this.tabPage2.Controls.SetChildIndex(this.dataGridView1, 0);
             // 
-            // medicationDataset
+            // timeTableBindingSource1
             // 
-            this.medicationDataset.DataSetName = "MedicationDataset";
-            this.medicationDataset.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.timeTableBindingSource1.DataMember = "FK__TimeTable__ID__60A75C0F";
+            this.timeTableBindingSource1.DataSource = this.staffBindingSource;
             // 
-            // medication_DBBindingSource
+            // staffBindingSource
             // 
-            this.medication_DBBindingSource.DataMember = "Medication_DB";
-            this.medication_DBBindingSource.DataSource = this.medicationDataset;
-            // 
-            // medication_DBTableAdapter
-            // 
-            this.medication_DBTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.Medication_DBTableAdapter = this.medication_DBTableAdapter;
-            this.tableAdapterManager.UpdateOrder = doctorsSurgery.MedicationDatasetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(276, 382);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // timeTableBindingSource
-            // 
-            this.timeTableBindingSource.DataMember = "TimeTable";
-            this.timeTableBindingSource.DataSource = this.timetableDataSet;
+            this.staffBindingSource.DataMember = "Staff";
+            this.staffBindingSource.DataSource = this.timetableDataSet;
             // 
             // timetableDataSet
             // 
             this.timetableDataSet.DataSetName = "TimetableDataSet";
             this.timetableDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // staffDataset
+            // 
+            this.staffDataset.DataSetName = "StaffDataset";
+            this.staffDataset.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // staffBindingSource2
+            // 
+            this.staffBindingSource2.DataMember = "Staff";
+            this.staffBindingSource2.DataSource = this.staffDataset;
+            // 
+            // staffTableAdapter1
+            // 
+            this.staffTableAdapter1.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager2
+            // 
+            this.tableAdapterManager2.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager2.StaffTableAdapter = this.staffTableAdapter1;
+            this.tableAdapterManager2.UpdateOrder = doctorsSurgery.StaffDatasetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // timeTableBindingSource3
+            // 
+            this.timeTableBindingSource3.DataMember = "TimeTable";
+            this.timeTableBindingSource3.DataSource = this.timetableDataSetBindingSource;
+            // 
+            // timetableDataSetBindingSource
+            // 
+            this.timetableDataSetBindingSource.DataSource = this.timetableDataSet;
+            this.timetableDataSetBindingSource.Position = 0;
+            // 
+            // fKTimeTableID60A75C0FBindingSource
+            // 
+            this.fKTimeTableID60A75C0FBindingSource.DataMember = "FK__TimeTable__ID__60A75C0F";
+            this.fKTimeTableID60A75C0FBindingSource.DataSource = this.staffBindingSource;
+            // 
+            // staffBindingSource1
+            // 
+            this.staffBindingSource1.DataMember = "Staff";
+            this.staffBindingSource1.DataSource = this.timetableDataSet;
+            // 
+            // timeTableBindingSource
+            // 
+            this.timeTableBindingSource.DataMember = "TimeTable";
+            this.timeTableBindingSource.DataSource = this.timetableDataSet;
             // 
             // timeTableTableAdapter
             // 
@@ -128,124 +157,94 @@
             this.tableAdapterManager1.TimeTableTableAdapter = this.timeTableTableAdapter;
             this.tableAdapterManager1.UpdateOrder = doctorsSurgery.TimetableDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // staffBindingSource
-            // 
-            this.staffBindingSource.DataMember = "Staff";
-            this.staffBindingSource.DataSource = this.timetableDataSet;
-            // 
             // staffTableAdapter
             // 
             this.staffTableAdapter.ClearBeforeFill = true;
             // 
-            // timeTableDataGridView
+            // timeTableBindingSource2
             // 
-            this.timeTableDataGridView.AutoGenerateColumns = false;
-            this.timeTableDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.timeTableDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8});
-            this.timeTableDataGridView.DataSource = this.timeTableBindingSource;
-            this.timeTableDataGridView.Location = new System.Drawing.Point(8, 33);
-            this.timeTableDataGridView.Name = "timeTableDataGridView";
-            this.timeTableDataGridView.Size = new System.Drawing.Size(750, 219);
-            this.timeTableDataGridView.TabIndex = 11;
-            this.timeTableDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.timeTableDataGridView_CellContentClick);
+            this.timeTableBindingSource2.DataMember = "TimeTable";
+            this.timeTableBindingSource2.DataSource = this.timetableDataSet;
             // 
-            // dataGridViewTextBoxColumn1
+            // dataGridView1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(8, 6);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1052, 299);
+            this.dataGridView1.TabIndex = 15;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // dataGridViewTextBoxColumn2
+            // button1
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Monday";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Monday";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.button1.Location = new System.Drawing.Point(350, 139);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // dataGridViewTextBoxColumn3
+            // button2
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Tuesday";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Tuesday";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Wednesday";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Wednesday";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Thursday";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Thursday";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Friday";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Friday";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Saturday";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Saturday";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Sunday";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Sunday";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.button2.Location = new System.Drawing.Point(380, 203);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(774, 423);
+            this.ClientSize = new System.Drawing.Size(1076, 423);
             this.Name = "Home";
             this.Text = "home";
             this.Load += new System.EventHandler(this.Home_Load);
             this.tabs.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.medicationDataset)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medication_DBBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeTableBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timetableDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeTableBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeTableDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timetableDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.staffDataset)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeTableBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timetableDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKTimeTableID60A75C0FBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeTableBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private MedicationDataset medicationDataset;
-        private System.Windows.Forms.BindingSource medication_DBBindingSource;
-        private MedicationDatasetTableAdapters.Medication_DBTableAdapter medication_DBTableAdapter;
-        private MedicationDatasetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.Button button1;
         private TimetableDataSet timetableDataSet;
         private System.Windows.Forms.BindingSource timeTableBindingSource;
         private TimetableDataSetTableAdapters.TimeTableTableAdapter timeTableTableAdapter;
         private TimetableDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
         private System.Windows.Forms.BindingSource staffBindingSource;
         private TimetableDataSetTableAdapters.StaffTableAdapter staffTableAdapter;
-        private System.Windows.Forms.DataGridView timeTableDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.BindingSource timeTableBindingSource1;
+        private System.Windows.Forms.BindingSource timeTableBindingSource2;
+        private System.Windows.Forms.BindingSource staffBindingSource1;
+        private System.Windows.Forms.BindingSource timetableDataSetBindingSource;
+        private StaffDataset staffDataset;
+        private System.Windows.Forms.BindingSource staffBindingSource2;
+        private StaffDatasetTableAdapters.StaffTableAdapter staffTableAdapter1;
+        private StaffDatasetTableAdapters.TableAdapterManager tableAdapterManager2;
+        private System.Windows.Forms.BindingSource fKTimeTableID60A75C0FBindingSource;
+        private System.Windows.Forms.BindingSource timeTableBindingSource3;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

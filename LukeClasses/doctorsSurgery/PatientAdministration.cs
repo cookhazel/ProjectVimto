@@ -26,7 +26,7 @@ namespace doctorsSurgery
                 this.tableAdapterManager.UpdateAll(this.patientDataset);
                 MessageBox.Show("Update successful");
             }
-            catch (System.Exception ex)
+            catch (System.Exception )
             {
                 MessageBox.Show("Update failed");
             } 
@@ -43,7 +43,7 @@ namespace doctorsSurgery
         private void button1_Click(object sender, EventArgs e)
         {
             Administration update = new Administration();
-            update.databaseFill();
+            update.databaseFill_Patient();
             patient_DBDataGridView.Refresh();
         }
 

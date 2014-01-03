@@ -1,0 +1,8 @@
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\UnitTests\bin\Debug\hazelDatabase.mdf
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\UnitTests\bin\Debug\UnitTests.dll
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\UnitTests\bin\Debug\ClassesSE.exe
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\UnitTests\bin\Debug\ClassesSE.pdb
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\UnitTests\obj\Debug\UnitTests.dll
+C:\Users\Hazel\Documents\Uni 2013-14\Software Engineering\HazelClasses\UnitTests\obj\Debug\UnitTests.pdb

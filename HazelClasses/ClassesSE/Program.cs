@@ -18,6 +18,7 @@ namespace ClassesSE
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoginPage());
             //Application.Run(new AppointmentUI());
+            //Application.Run(new FormFindPatient());
         }
     }
 }

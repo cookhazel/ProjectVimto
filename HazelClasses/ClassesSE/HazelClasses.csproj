@@ -62,18 +62,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppointmentUnused.cs" />
     <Compile Include="AppointmentUI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AppointmentUI.Designer.cs">
       <DependentUpon>AppointmentUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataViewTestForm.cs">
+    <Compile Include="cancelAppointment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DataViewTestForm.Designer.cs">
-      <DependentUpon>DataViewTestForm.cs</DependentUpon>
+    <Compile Include="cancelAppointment.Designer.cs">
+      <DependentUpon>cancelAppointment.cs</DependentUpon>
     </Compile>
     <Compile Include="hazelDatabaseDataSet.cs">
       <DependentUpon>hazelDatabaseDataSet.xsd</DependentUpon>
@@ -98,14 +97,13 @@
     <Compile Include="LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Patient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AppointmentUI.resx">
       <DependentUpon>AppointmentUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DataViewTestForm.resx">
-      <DependentUpon>DataViewTestForm.cs</DependentUpon>
+    <EmbeddedResource Include="cancelAppointment.resx">
+      <DependentUpon>cancelAppointment.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="HazelDataClasses.dbml.layout">
       <DependentUpon>HazelDataClasses.dbml</DependentUpon>

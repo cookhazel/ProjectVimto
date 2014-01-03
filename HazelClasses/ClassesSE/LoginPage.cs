@@ -16,6 +16,7 @@ namespace ClassesSE
         public LoginPage()
         {
             InitializeComponent();
+            //focus on username text box so when the form loads, it is automatically set to be able to type into the username box
             usernameTextBox.Focus();
             //replace with CenterToParent when LoginPage is instantiated from a main form
             this.CenterToScreen();
@@ -34,29 +35,25 @@ namespace ClassesSE
                 using (DataContext dbContext = new DataContext(connectionString))
                 {
                     Table<login> loginRecords = dbContext.GetTable<login>();
-
+                    //query to check the username and password exist and the password entered matches the associated username.
                     var query =
                         from record in loginRecords
                         where (record.Username == usernameTextBox.Text) && (record.Password == passwordTextBox.Text)
                         select record;
 
-                    //IQueryable<login> sameQuery = loginRecords.Where(l => l.Username == "Reception").Single<login>();
+                    //MessageBox.Show(query.ToString());
 
                     //Calling ToList will return DB results. This is "Deferred Execution"
                     //List<login> list = query.ToList<login>();
 
                     if (query.Count<login>() == 1)
                     {
-                        //var passwordQuery =
-                        //    from record in loginRecords
-                        //    where record.Password == passwordTextBox.Text
-                        //    select record;
-                        //need to check that the password is not only exists in the db, but is the one that matches the password 
-                        //check the password
-                        //Application.Run(new AppointmentUI());
-                        new AppointmentUI().Show();
-                        this.Hide();
+                        AppointmentUI appointmentPage = new AppointmentUI();  
+                        //when the appointmentPage is closed, it closes the whole application.
+                        appointmentPage.FormClosed += (closingForm, eventArgs) => this.Close();
+                        appointmentPage.Show();
 
+                        this.Hide();
                     }
                     else
                     {
@@ -64,31 +61,21 @@ namespace ClassesSE
                         MessageBox.Show("Incorrect, please enter a valid username/password");
                     }
                 }
-                //MessageBox.Show(query.ToString());
-              
-                //check against database
             }
             catch(Exception ex)
             {
                 MessageBox.Show("Error while logging in, please try again");
             }
-
-            //string databaseLocation = "C:\path\to\database\database.mdf";
-            //DataContext dbContext= new DataContext(databaseLocation);
-            //Above does not connect to database properly, but it should. Don't know why!
             
-            //For some reason, the .mdf cannot be accessed directly as above. This may be what
+            //For some reason, the .mdf cannot be accessed directly. This may be what
             //causes dbContext.DatabaseExists() to return false, even though queries work.
             //DataContext using reference to Data.Linq above.
-            
-
-           // foreach (var record in query)
-             //   MessageBox.Show(record.Password);
-
+  
         }
 
         private void passwordTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
+            //13 is the character code assocaited with the enter key.
             if (e.KeyChar == 13)
             {
                 _loginButton.PerformClick();

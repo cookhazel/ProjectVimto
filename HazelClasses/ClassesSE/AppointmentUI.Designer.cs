@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.submitAppointment = new System.Windows.Forms.Button();
+            this._cancelAppointment = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // _appointmentTimeDropDown
@@ -85,11 +86,22 @@
             this.submitAppointment.UseVisualStyleBackColor = true;
             this.submitAppointment.Click += new System.EventHandler(this.SubmitAppointment_Click);
             // 
+            // _cancelAppointment
+            // 
+            this._cancelAppointment.Location = new System.Drawing.Point(41, 314);
+            this._cancelAppointment.Name = "_cancelAppointment";
+            this._cancelAppointment.Size = new System.Drawing.Size(156, 31);
+            this._cancelAppointment.TabIndex = 5;
+            this._cancelAppointment.Text = "Cancel Appointment";
+            this._cancelAppointment.UseVisualStyleBackColor = true;
+            this._cancelAppointment.Click += new System.EventHandler(this._cancelAppointment_Click);
+            // 
             // AppointmentUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(509, 410);
+            this.Controls.Add(this._cancelAppointment);
             this.Controls.Add(this.submitAppointment);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -110,6 +122,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button submitAppointment;
+        private System.Windows.Forms.Button _cancelAppointment;
     }
 }
 
